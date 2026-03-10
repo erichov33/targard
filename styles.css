@@ -1,0 +1,226 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #005a9e;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.contact-btn {
+    background-color: #005a9e;
+    color: #fff !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.hero {
+    background-color: #f4f7f9;
+    color: #333;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.services {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 50px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+.card img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.training {
+    padding: 80px 0;
+    background-color: #f4f7f9;
+}
+
+.training h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.view-all {
+    float: right;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.training-cards {
+    margin-top: 50px;
+}
+
+.training-card {
+    display: flex;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+.training-card img {
+    width: 300px;
+}
+
+.training-content {
+    padding: 30px;
+}
+
+.meta {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.training-content h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.btn-register {
+    background-color: #005a9e;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #003366;
+    color: #fff;
+    padding: 50px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-about, .footer-links, .footer-legal, .footer-contact {
+    width: 22%;
+}
+
+footer h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    line-height: 1.6;
+}
+
+.social-media img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-contact p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-contact img {
+    width: 20px;
+    margin-right: 10px;
+}

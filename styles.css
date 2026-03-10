@@ -48,9 +48,9 @@ nav a {
     font-weight: 500;
 }
 
-.contact-btn {
+nav ul li a.contact-btn {
     background-color: #005a9e;
-    color: #fff !important;
+    color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
 }

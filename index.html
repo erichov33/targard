@@ -68,8 +68,8 @@
             <h2>Training Programs</h2>
             <p class="subtitle">Empower your management and HR teams with the latest knowledge in labour practices and organizational development.</p>
             <div class="tabs">
-                <button class="tablink" onclick="openTab(event, 'compliance')">Compliance</button>
-                <button class="tablink" onclick="openTab(event, 'leadership')">Leadership</button>
+                <button class="tablink" data-tab="compliance">Compliance</button>
+                <button class="tablink" data-tab="leadership">Leadership</button>
             </div>
             <div id="compliance" class="tabcontent">
                 <div class="training-card">
@@ -145,9 +145,9 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2>Contact Us</h2>
-            <form action="mailto:info@targardpvt.com" method="post" enctype="text/plain">
+            <form action="https://formspree.io/f/PLACEHOLDER" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="email" name="_replyto" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Your Message" required></textarea>
                 <button type="submit" class="btn">Send Message</button>
             </form>

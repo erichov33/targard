@@ -12,24 +12,27 @@
             <div class="logo">Targard Pvt Ltd</div>
             <nav>
                 <ul>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Training Programs</a></li>
-                    <li><a href="#" class="contact-btn">Contact Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#training">Training Programs</a></li>
+                    <li><a href="#case-studies">Case Studies</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact" class="contact-btn">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="hero">
+    <section id="hero" class="hero">
         <div class="container">
             <h1>Expert Labour Consultancy and Professional Training for Your Business.</h1>
             <p>Providing reliable solutions for labor relations and workforce development to ensure compliance and growth in a competitive landscape.</p>
-            <a href="#" class="btn">Explore Services</a>
+            <a href="#services" class="btn">Explore Services</a>
         </div>
     </section>
 
-    <section class="services">
+    <section id="services" class="services">
         <div class="container">
             <h2>Our Services</h2>
             <p class="subtitle">Strategic support designed to mitigate risk and empower your human capital.</p>
@@ -53,12 +56,22 @@
         </div>
     </section>
 
-    <section class="training">
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>A premier labour consultancy dedicated to helping businesses navigate the complexities of employment law and workforce management with confidence and integrity.</p>
+        </div>
+    </section>
+
+    <section id="training" class="training">
         <div class="container">
             <h2>Training Programs</h2>
             <p class="subtitle">Empower your management and HR teams with the latest knowledge in labour practices and organizational development.</p>
-            <a href="#" class="view-all">View all programs &gt;</a>
-            <div class="training-cards">
+            <div class="tabs">
+                <button class="tablink" onclick="openTab(event, 'compliance')">Compliance</button>
+                <button class="tablink" onclick="openTab(event, 'leadership')">Leadership</button>
+            </div>
+            <div id="compliance" class="tabcontent">
                 <div class="training-card">
                     <img src="https://via.placeholder.com/300x200" alt="Advanced Disciplinary Hearing Procedures">
                     <div class="training-content">
@@ -68,6 +81,8 @@
                         <a href="#" class="btn-register">Register Now</a>
                     </div>
                 </div>
+            </div>
+            <div id="leadership" class="tabcontent">
                 <div class="training-card">
                     <img src="https://via.placeholder.com/300x200" alt="Effective Collective Bargaining Strategies">
                     <div class="training-content">
@@ -78,6 +93,64 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="case-studies" class="case-studies">
+        <div class="container">
+            <h2>Case Studies</h2>
+            <div class="case-study">
+                <h3>Case Study 1: Manufacturing Firm</h3>
+                <p>Read how we helped a manufacturing firm navigate complex labour laws and improve employee relations.</p>
+            </div>
+            <div class="case-study">
+                <h3>Case Study 2: Tech Startup</h3>
+                <p>Learn how we assisted a tech startup in establishing a compliant and scalable HR infrastructure.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2>Blog</h2>
+            <div class="blog-post">
+                <h3>Recent Changes in Labour Law</h3>
+                <p>Stay updated with the latest amendments and their implications for your business.</p>
+            </div>
+            <div class="blog-post">
+                <h3>The Importance of Employee Handbooks</h3>
+                <p>Discover why a well-crafted employee handbook is crucial for any organization.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3 class="faq-question">What services do you offer?</h3>
+                <div class="faq-answer">
+                    <p>We offer a range of services including labour law compliance, employee relations, and strategic labour consulting.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Who are your typical clients?</h3>
+                <div class="faq-answer">
+                    <p>We work with a diverse range of clients, from small and medium-sized enterprises to large corporations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="mailto:info@targardpvt.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
         </div>
     </section>
 
@@ -94,18 +167,12 @@
             <div class="footer-links">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Our Services</a></li>
-                    <li><a href="#">Training Programs</a></li>
-                    <li><a href="#">About Our Firm</a></li>
-                </ul>
-            </div>
-            <div class="footer-legal">
-                <h3>Legal</h3>
-                <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Compliance Statement</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#training">Training Programs</a></li>
+                    <li><a href="#case-studies">Case Studies</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#faq">FAQ</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
@@ -116,5 +183,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>

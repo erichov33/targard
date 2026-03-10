@@ -13,6 +13,10 @@ header {
     background-color: #fff;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 header .container {
@@ -51,10 +55,13 @@ nav a {
     border-radius: 5px;
 }
 
+section {
+    padding: 120px 0;
+}
+
 .hero {
     background-color: #f4f7f9;
     color: #333;
-    padding: 100px 0;
     text-align: center;
 }
 
@@ -78,7 +85,6 @@ nav a {
 }
 
 .services {
-    padding: 80px 0;
     text-align: center;
 }
 
@@ -95,6 +101,7 @@ nav a {
 .service-cards {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -103,6 +110,7 @@ nav a {
     border-radius: 10px;
     width: 30%;
     box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
 }
 
 .card img {
@@ -115,24 +123,41 @@ nav a {
     margin-bottom: 15px;
 }
 
-.training {
-    padding: 80px 0;
+.about {
     background-color: #f4f7f9;
 }
 
-.training h2 {
-    font-size: 36px;
+.training {
+    background-color: #fff;
+}
+
+.tabs {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
     margin-bottom: 20px;
 }
 
-.view-all {
-    float: right;
-    text-decoration: none;
-    color: #007bff;
+.tablink {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
 }
 
-.training-cards {
-    margin-top: 50px;
+.tablink:hover {
+    background-color: #ddd;
+}
+
+.tablink.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    display: none;
 }
 
 .training-card {
@@ -171,6 +196,56 @@ nav a {
     border-radius: 5px;
 }
 
+.case-studies {
+    background-color: #f4f7f9;
+}
+
+.case-study {
+    margin-bottom: 30px;
+}
+
+.blog {
+    background-color: #fff;
+}
+
+.blog-post {
+    margin-bottom: 30px;
+}
+
+.faq {
+    background-color: #f4f7f9;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.faq-answer {
+    display: none;
+    padding-left: 20px;
+}
+
+.contact {
+    background-color: #fff;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input, .contact textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 footer {
     background-color: #003366;
     color: #fff;
@@ -180,10 +255,12 @@ footer {
 footer .container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.footer-about, .footer-links, .footer-legal, .footer-contact {
-    width: 22%;
+.footer-about, .footer-links, .footer-contact {
+    width: 30%;
+    margin-bottom: 20px;
 }
 
 footer h3 {
@@ -223,4 +300,40 @@ footer a {
 .footer-contact img {
     width: 20px;
     margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .service-cards, footer .container {
+        flex-direction: column;
+    }
+
+    .card, .footer-about, .footer-links, .footer-contact {
+        width: 100%;
+    }
+
+    .training-card {
+        flex-direction: column;
+    }
+
+    .training-card img {
+        width: 100%;
+    }
 }

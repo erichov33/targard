@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Targard Pvt Ltd</title>
+    <title>Targard Pvt Ltd | Labor Consultancy & Training</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo">Targard Pvt Ltd</div>
+            <div class="logo-container">
+                <div class="logo-icon"></div>
+                <div class="logo-text">TARGARD <span>PVT LTD</span></div>
+            </div>
             <nav>
                 <ul>
+                    <li><a href="#hero">Home</a></li>
                     <li><a href="#services">Services</a></li>
+                    <li><a href="#training">Training</a></li>
                     <li><a href="#about">About Us</a></li>
-                    <li><a href="#training">Training Programs</a></li>
-                    <li><a href="#case-studies">Case Studies</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contact" class="contact-btn">Contact Us</a></li>
+                    <li><a href="#contact" class="btn-consultation">Get Consultation</a></li>
                 </ul>
             </nav>
         </div>
@@ -26,117 +31,79 @@
 
     <section id="hero" class="hero">
         <div class="container">
-            <h1>Expert Labour Consultancy and Professional Training for Your Business.</h1>
-            <p>Providing reliable solutions for labor relations and workforce development to ensure compliance and growth in a competitive landscape.</p>
-            <a href="#services" class="btn">Explore Services</a>
+            <div class="hero-content">
+                <h1>Empowering Your Workforce, <span>Protecting Your Interests.</span></h1>
+                <p>Specialized labor law consultancy and corporate training solutions designed to foster industrial harmony and legal compliance.</p>
+                <div class="hero-btns">
+                    <a href="#services" class="btn-primary">Explore Our Services</a>
+                    <a href="#training" class="btn-secondary">Watch Training Demo</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Abstract visual from design -->
+            </div>
         </div>
     </section>
 
     <section id="services" class="services">
         <div class="container">
-            <h2>Our Services</h2>
-            <p class="subtitle">Strategic support designed to mitigate risk and empower your human capital.</p>
+            <span class="section-label">Our Expertise</span>
+            <h2>Comprehensive Labor Solutions</h2>
             <div class="service-cards">
                 <div class="card">
-                    <img src="https://img.icons8.com/ios/50/000000/shield.png" alt="Labour Law Compliance">
-                    <h3>Labour Law Compliance</h3>
-                    <p>Ensure your organization adheres to all statutory requirements, minimizing legal risks and protecting your reputation.</p>
+                    <div class="card-icon"><i class="fa-solid fa-file-contract"></i></div>
+                    <h3>Compliance Audits</h3>
+                    <p>Systematic reviews of your HR practices to ensure full adherence to national and international labor standards.</p>
                 </div>
                 <div class="card">
-                    <img src="https://img.icons8.com/ios/50/000000/conference-call.png" alt="Employee Relations">
-                    <h3>Employee Relations</h3>
-                    <p>Foster a positive work environment through effective communication strategies and fair conflict resolution mechanisms.</p>
+                    <div class="card-icon"><i class="fa-solid fa-users-gear"></i></div>
+                    <h3>Industrial Relations</h3>
+                    <p>Expert negotiation and conflict resolution strategies to maintain healthy workplace environments and productivity.</p>
                 </div>
                 <div class="card">
-                    <img src="https://img.icons8.com/ios/50/000000/graph.png" alt="Strategic Labour Consulting">
-                    <h3>Strategic Labour Consulting</h3>
-                    <p>High-level advisory services for organizational restructuring, union negotiations, and long-term workforce planning.</p>
+                    <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h3>Corporate Training</h3>
+                    <p>Tailored workshops on POSH, worker safety, soft skills, and leadership development for all organizational levels.</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>A premier labour consultancy dedicated to helping businesses navigate the complexities of employment law and workforce management with confidence and integrity.</p>
         </div>
     </section>
 
     <section id="training" class="training">
         <div class="container">
-            <h2>Training Programs</h2>
-            <p class="subtitle">Empower your management and HR teams with the latest knowledge in labour practices and organizational development.</p>
-            <div class="tabs">
-                <button class="tablink" data-tab="compliance">Compliance</button>
-                <button class="tablink" data-tab="leadership">Leadership</button>
+            <div class="training-visual">
+                <i class="fa-solid fa-circle-play"></i>
             </div>
-            <div id="compliance" class="tabcontent">
-                <div class="training-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Advanced Disciplinary Hearing Procedures">
-                    <div class="training-content">
-                        <p class="meta">COMPLIANCE WORKSHOP | OCT 24, 2023</p>
-                        <h3>Advanced Disciplinary Hearing Procedures</h3>
-                        <p>A deep dive into conducting fair hearings, managing documentation, and legal precedents in dismissal cases.</p>
-                        <a href="#" class="btn-register">Register Now</a>
-                    </div>
-                </div>
-            </div>
-            <div id="leadership" class="tabcontent">
-                <div class="training-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Effective Collective Bargaining Strategies">
-                    <div class="training-content">
-                        <p class="meta">LEADERSHIP SEMINAR | NOV 12, 2023</p>
-                        <h3>Effective Collective Bargaining Strategies</h3>
-                        <p>Practical skills for negotiating with unions and maintaining operational stability during labor talks.</p>
-                        <a href="#" class="btn-register">Register Now</a>
-                    </div>
-                </div>
+            <div class="training-content">
+                <h2>World-Class Training Programs</h2>
+                <p>We don't just teach, we transform. Our training modules are designed by industry veterans to ensure practical knowledge transfer and measurable ROI.</p>
+                <ul class="training-list">
+                    <li><i class="fa-solid fa-circle-check"></i> Interactive POSH & Gender Sensitization</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Labor Laws for Managers & HR Professionals</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Industrial Safety (OSHA Standards)</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section id="case-studies" class="case-studies">
+    <section class="stats">
         <div class="container">
-            <h2>Case Studies</h2>
-            <div class="case-study">
-                <h3>Case Study 1: Manufacturing Firm</h3>
-                <p>Read how we helped a manufacturing firm navigate complex labour laws and improve employee relations.</p>
-            </div>
-            <div class="case-study">
-                <h3>Case Study 2: Tech Startup</h3>
-                <p>Learn how we assisted a tech startup in establishing a compliant and scalable HR infrastructure.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="blog" class="blog">
-        <div class="container">
-            <h2>Blog</h2>
-            <div class="blog-post">
-                <h3>Recent Changes in Labour Law</h3>
-                <p>Stay updated with the latest amendments and their implications for your business.</p>
-            </div>
-            <div class="blog-post">
-                <h3>The Importance of Employee Handbooks</h3>
-                <p>Discover why a well-crafted employee handbook is crucial for any organization.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="faq" class="faq">
-        <div class="container">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-item">
-                <h3 class="faq-question">What services do you offer?</h3>
-                <div class="faq-answer">
-                    <p>We offer a range of services including labour law compliance, employee relations, and strategic labour consulting.</p>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>15+</h3>
+                    <p>Years Experience</p>
                 </div>
-            </div>
-            <div class="faq-item">
-                <h3 class="faq-question">Who are your typical clients?</h3>
-                <div class="faq-answer">
-                    <p>We work with a diverse range of clients, from small and medium-sized enterprises to large corporations.</p>
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p>Clients Served</p>
+                </div>
+                <div class="stat-item">
+                    <h3>20k+</h3>
+                    <p>Trainees Certified</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>Compliance Rate</p>
                 </div>
             </div>
         </div>
@@ -144,42 +111,68 @@
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Contact Us</h2>
-            <form action="https://formspree.io/f/PLACEHOLDER" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="_replyto" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
+            <div class="contact-info">
+                <h2>Ready to fortify your labor standards?</h2>
+                <p>Get in touch with our expert consultants today for a comprehensive evaluation of your current practices.</p>
+                
+                <div class="info-item">
+                    <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="info-text"><span>+91 000 000 0000</span></div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="info-text"><span>consult@targard.in</span></div>
+                </div>
+            </div>
+            <div class="contact-form-card">
+                <form action="https://formspree.io/f/PLACEHOLDER" method="POST">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Company</label>
+                            <input type="text" name="company" placeholder="ABC Corp" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" name="_replyto" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Service Required</label>
+                        <select name="service">
+                            <option>Labor Compliance Audit</option>
+                            <option>Industrial Relations</option>
+                            <option>Corporate Training</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="message" placeholder="Tell us about your requirements..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-send">Send Request</button>
+                </form>
+            </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <div class="footer-about">
-                <h3>Targard Pvt Ltd</h3>
-                <p>A premier labour consultancy dedicated to helping businesses navigate the complexities of employment law and workforce management with confidence and integrity.</p>
-                <div class="social-media">
-                    <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn"></a>
-                    <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/twitter.png" alt="Twitter"></a>
+            <div class="footer-main">
+                <div class="logo-container">
+                    <div class="logo-icon"></div>
+                    <div class="logo-text" style="color: white;">TARGARD</div>
+                </div>
+                <div class="footer-social">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Facebook</a>
                 </div>
             </div>
-            <div class="footer-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#training">Training Programs</a></li>
-                    <li><a href="#case-studies">Case Studies</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                </ul>
-            </div>
-            <div class="footer-contact">
-                <h3>Contact Us</h3>
-                <p><img src="https://img.icons8.com/ios-filled/50/000000/marker.png" alt="Location"> 123 Corporate Plaza, Business District City, State 56789</p>
-                <p><img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="Phone"> +1 (555) 012-3456</p>
-                <p><img src="https://img.icons8.com/ios-filled/50/000000/new-post.png" alt="Email"> info@targardpvt.com</p>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Targard Pvt Ltd. All rights reserved. | Privacy Policy | Terms of Service</p>
             </div>
         </div>
     </footer>
